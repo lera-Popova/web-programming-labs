@@ -17,7 +17,6 @@ function setRussian() {
     document.getElementById('ok-button').value = 'ок';
     document.getElementById('reset-button').value = 'сброс';
 }
-
 function setEnglish() {
     let name = document.getElementById('student');
     name.innerHTML = 'Popova Valeriya';
@@ -36,4 +35,31 @@ function setEnglish() {
 
     document.getElementById('ok-button').value = 'ok';
     document.getElementById('reset-button').value = 'reset';
+}
+function showAlert() {
+    let userName = document.getElementById('input-name').value;
+    let userSurname = document.getElementById('input-surname').value;
+    let userAge = document.getElementById('input-age').value;
+    alert('Привет,' + userName + ' ' + userSurname + '\n' + 'Ваш возраст:' + userAge);
+    let r = Math.round(Math.random()*255);
+    let g = Math.round(Math.random()*255);
+    let b = Math.round(Math.random()*255);
+    let color = 'rgb(' + r + ',' + g + ',' + b + ')';
+    document.getElementById('user-data').style.backgroundColor = color;
+}
+function Header() {
+    alert('Автор работы - Попова Валерия');
+    let r = Math.round(Math.random()*255);
+    let g = Math.round(Math.random()*255);
+    let b = Math.round(Math.random()*255);
+    let color = 'rgb(' + r + ',' + g + ',' + b + ')';
+    document.getElementById('head').style.backgroundColor = color;
+}
+function Footer() {
+    alert('Факультет бизнеса, ФБИ-01, 3 курс, 2022');
+    let r = Math.round(Math.random()*255);
+    let g = Math.round(Math.random()*255);
+    let b = Math.round(Math.random()*255);
+    let color = 'rgb(' + r + ',' + g + ',' + b + ')';
+    document.getElementById('footer').style.backgroundColor = color;
 }
